@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Realestate Management System</title>
+</head>
+
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+     background-image: url('img4.jpg');
+    background-size: cover;
+}
+
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar li {
+    margin: 0;
+}
+
+.navbar a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #555;
+}
+
+.navbar .active {
+    background-color: #007BFF;
+}
+
+.content {
+    padding: 20px;
+}
+
+.navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        .navbar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        .navbar li {
+            margin: 0;
+        }
+
+        .navbar a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: #555;
+        }
+
+        .navbar .right {
+            margin-left: auto; /* Pushes the link to the right */
+        }
+
+ .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #007BFF;
+            color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            z-index: 999;
+        }
+</style>
+<body>
+<h1>Realestate Management system (ABC Realestates)</h1>
+<nav class="navbar">
+    <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="/aboutus">About us</a></li>	
+        <li><a href="/properties">Available Properties</a></li>
+        <li><a href="/response">Response</a></li>
+        <li class="right"><a href="/login">Login/Register</a></li>
+    </ul>
+</nav>
+
+<div class="content">
+    <!-- Your page content goes here -->
+</div>
+
+<script src="script.js"></script>
+
+ 
+
+    <!-- Button to trigger the popup message -->
+    <button id="showPopup">Show Popup</button>
+
+    <!-- Popup message -->
+    <div class="popup" id="popupMessage">
+        <p>Registration Successful</p>
+        <button id="closePopup">Close</button>
+    </div>
+
+    <script>
+        // JavaScript to show and hide the popup message
+        const showPopupButton = document.getElementById('showPopup');
+        const closePopupButton = document.getElementById('closePopup');
+        const popupMessage = document.getElementById('popupMessage');
+
+        showPopupButton.addEventListener('click', function () {
+            popupMessage.style.display = 'block';
+        });
+
+        closePopupButton.addEventListener('click', function () {
+            popupMessage.style.display = 'none';
+        });
+    </script>
+
+</body>
+</html>

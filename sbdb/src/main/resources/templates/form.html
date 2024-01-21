@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Example</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<style>
+	body {
+    margin: 0;
+    padding: 0;
+    background-image: url('img2.jpg');
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.8);
+    width: 400px;
+    margin: 2px auto;
+    padding: 20px;
+    border-radius: 9px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    text-align: center;
+}
+
+.input-group {
+    margin: 10px 0;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 7px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 5px 0;
+    text-align: center;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+</style>
+
+<body>
+
+<div class="container">
+    <h1>Enter Your Information</h1>
+
+    <form action="home" th:ob="${stud2}" method="post">
+        <div class="input-group">
+            <label for="id">ID:</label>
+            <input type="text" id="id" name="id">
+        </div>
+
+        <div class="input-group">
+            <label for="firstname">First Name:</label>
+            <input type="text" id="firstname" name="firstname">
+        </div>
+
+        <div class="input-group">
+            <label for="lastname">Last Name:</label>
+            <input type="text" id="lastname" name="lastname">
+        </div>
+
+        <div class="input-group">
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email">
+        </div>
+
+        <div class="input-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+        </div>
+
+        <input type="submit" value="Register">
+    </form>
+</div>
+
+</body>
+</html>

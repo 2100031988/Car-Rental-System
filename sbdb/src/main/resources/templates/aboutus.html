@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Us</title>
+</head>
+<style>
+/* Apply CSS to the person images */
+.person img {
+    width: 200px; /* Adjust the width as needed */
+    height: 250px; /* Adjust the height as needed */
+    object-fit: cover; /* Maintain image aspect ratio and cover the entire area */
+    border: 2px solid #333; /* Optional: Add a border to the images */
+}
+
+/* Create a grid layout for the person sections */
+main {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Additional CSS for styling the person sections */
+.person {
+    text-align: center;
+    margin: 20px;
+    width: calc(33.33% - 40px); /* Adjust the width as needed to create a 3-column layout */
+}
+
+</style>
+<body>
+    <header>
+        <h1>About Us</h1>
+    </header>
+    <main>
+        <section class="person">
+            <img src="sab.jpg" alt="Person 1">
+            <h2>Sabyasachi Kumar</h2>
+            <p>Sabyasachi Kumar is a co-founder and the CEO of our company. He has a background in business management and has been a driving force behind our success.</p>
+        </section>
+        <section class="person">
+            <img src="uday1.jpg" alt="Person 2">
+            <h2>Uday Kumar</h2>
+            <p>Uday Kumar is our lead developer. He has a strong technical background and has contributed significantly to our product development.</p>
+        </section>
+        <section class="person">
+            <img src="vvk.jpg" alt="Person 3">
+            <h2>Vivek Kumar</h2>
+            <p>Vivek Kumar is our marketing expert. He has helped us reach a wider audience and increase our brand's visibility.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Your Company Name. All rights reserved.</p>
+    </footer>
+</body>
+</html>
